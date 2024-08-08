@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+<body>
+    <form>
+        <label for="">Student Name :</label>
+        <input type="text" minlength="3">
+        <br>
+        <br>
+        <label for="">Student Email :</label>
+        <input type="email" required ><br>
+
+        <label for="">Address</label><br>
+
+        <textarea rows="5"></textarea>
+        <BR>
+        <label for="">Gender</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <br>
+
+        <label for="">Select course</label>
+        <select>
+            <option >Maths</option>
+            <option >English</option>
+            <option >Hindi</option>
+            <option >Science</option>
+        </select>
+        <br>
+
+        <label for="">College Name</label>
+
+        <input type="text" list="college">
+        <datalist id="college">
+            <option>RRIMT</option>
+            <option>SRIMT</option>
+            <option>BBDU</option>
+           
+        </datalist>
+
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
