@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+          
+            
+            border: 2px solid green;
+
+        }
+        .container{
+            height: 60vh;
+            width: 80vw;
+            display: grid;
+            margin-top: 60px;
+            grid-template-columns: 2fr 2.5fr;
+
+        }
+        .img{
+            border: 2px solid red;
+        
+        }
+        .img img{
+            width: 500px;
+            
+        }
+        .details{
+            border: 2px solid red;
+            padding: 10px 10px;
+        }
+        .sub-heading{
+            font-size: 15px;
+            color: grey;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="img">
+                <img src="https://clipart-library.com/images_k/shoe-transparent-background/shoe-transparent-background-12.png" alt="">
+            </div>
+            <div class="details">
+                <h1 class="title">Nike Shoes</h1>
+                <h4 class="sub-heading">TURBO GREEN</h4>
+                <h3><strike>$170</strike> $149.99</h3>
+
+                <h4>DESCRIPTION</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat dolore maiores similique vel esse cum repellat eum neque itaque?</p>
+                <label for="">colors</label>
+                <select>
+                    <option>Black</option>
+                    <option>blue</option>
+                    <option>green</option>
+                </select>
+                <label for="">Size</label>
+                <select>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                </select>
+                <label for="">Qty.</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+
+                <button class="btn">ADD TO CART</button>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

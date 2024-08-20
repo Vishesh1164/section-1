@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Montserrat;
-           
+
         }
-        .hero-section{
-            
-            height: 90vh;
+
+        .hero-section {
+
+            height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -27,27 +33,80 @@
             background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/08/HD-Backgrounds-Black-1920x1080.jpg');
             background-size: cover;
         }
-        .hero-title{
+
+        .hero-title {
             font-size: 50px;
         }
-        .btn{
+
+        .btn {
             padding: 10px 10px;
             border-radius: 5px;
             border: none;
             font-weight: 600;
         }
-        .primary-btn{
+
+        .primary-btn {
             background-color: aqua;
             color: black;
             border: 2px solid aqua;
-           
+
         }
-        .secondary-btn{
+
+        .secondary-btn {
             border: 2px solid aqua;
             color: aqua;
             background-color: black;
         }
+        .feature-section{
+            padding: 100px 150px;
+        }
+        .card-container{
+            display: flex;
+            /* flex-direction: row-reverse;
+            justify-content: flex-start; */
+            justify-content: space-between;
+            /* height: 60vh;
+            align-items: flex-start; */
+            
+            
+           
+        }
+        .card{
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px 0 #00000077;
+            transition-duration: .36s;
+        }
+        .card:hover{
+            transform: translateY(-20px);
+            background-color: black;
+            color: white;
+        }
+        .section-title{
+            border: 2px solid red;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
 
+        }
+        .services-section{
+            padding: 100px 150px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .service-img{
+            border: 2px solid blue;
+        }
+        .service-img img{
+
+            width: 100%;
+        }
+        .service-info{
+            border: 2px solid red;
+        }
+        
     </style>
 </head>
 
@@ -56,14 +115,57 @@
 
         <section class="hero-section">
             <h1 class="hero-title">Welcome to website</h1>
-            <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nostrum ad magnam tenetur inventore,
+            <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nostrum ad
+                magnam tenetur inventore,
                 excepturi atque accusamus nesciunt, ullam quidem libero eaque possimus iusto dolor soluta eius
                 voluptates aut minima.</p>
 
-                <div class="hero-btns">
-                    <button class="btn primary-btn">Get started</button>
-                    <button class="btn secondary-btn">Learn more</button>
+            <div class="hero-btns">
+                <button class="btn primary-btn">Get started</button>
+                <button class="btn secondary-btn">Learn more</button>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <h1 class="section-title">Our Features</h1>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Fast Services</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum quasi molestias
+                        corrupti, voluptatem sequi velit blanditiis ea laboriosam incidunt?</p>
                 </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Fast Services</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum quasi molestias
+                        corrupti, voluptatem sequi velit blanditiis ea laboriosam incidunt?</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-rocket fa-5x"></i>
+                    <h2>Fast Services</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum quasi molestias
+                        corrupti, voluptatem sequi velit blanditiis ea laboriosam incidunt?</p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="services-section">
+            <div class="service-img">
+                <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg" alt="">
+
+
+            </div>
+
+            <div class="service-info">
+                <h3>Service title-1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem amet eaque accusantium sint enim? Corporis pariatur quibusdam rem asperiores id.</p>
+                <button class="btn primary-btn">learn More</button>
+
+            </div>
         </section>
     </main>
     <footer>
