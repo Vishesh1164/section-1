@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 8px;
+            padding-left: 80px;
+            padding-right: 100px;
+        }  
+        .brand{
+            font-size: 30px;
+            color: aqua;
+            
+        }
+        .nav{
+            display: flex;
+            gap: 25px;
+        }
+        a{
+            color: aqua;
+            font-size: larger;
+            font-weight: bold;
+            text-decoration: none;
+          
+
+        }
+        a:hover{
+            color: red;
+        }
+        .search{
+            border-radius: 20px;
+            border: 2px solid aqua;
+            background-color: rgb(17, 16, 16);
+            padding-left: 10px;
+            
+        }
+        .search input{
+            width: 300px;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+           font-size: large;
+            background-color: rgb(17, 16, 16);
+            color: aqua;
+            padding: 10px;
+        }
+        .search input:focus{
+            outline: none;
+        }
+        i{
+            color: aqua;
+            padding-top: 4px;
+
+        }
+    </style>
+</head>
+<body>
+   <nav>
+    <h1 class="brand">Brand Name</h1>
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search" >
+    </div>
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Product</a>
+        <a href="">Service</a>
+    </div>
+   </nav> 
+</body>
+</html>
